@@ -2,6 +2,6 @@
   width:200px;
   height:200px;
   color: white;
-display: flow-root;
+  display: block;
 	float:left;
 }
