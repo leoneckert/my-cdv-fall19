@@ -6,6 +6,6 @@ body{
   { width: 500px;
     height: 500px;
     margin-top: 50px;
-    color: white;
+    background-color: white;
     z-index: 100000;
 }
