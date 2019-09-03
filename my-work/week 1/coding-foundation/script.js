@@ -1,6 +1,3 @@
-
-
-
 // create button on page (html)
 //✅
 
@@ -11,7 +8,17 @@ console.log (button);
 
 
 //detect the click
-button.addEventListener('click', createBox)
+button.addEventListener('click', create3Boxes)
+
+
+function create3Boxes() {
+  //select input
+  //read value of input
+  //fill value into the for loop
+  for (i = 0; i < 3; i++){
+    createBox()
+  }
+}
 
 
 function createBox (){
