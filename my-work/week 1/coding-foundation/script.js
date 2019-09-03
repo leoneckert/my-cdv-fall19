@@ -8,14 +8,17 @@ console.log (button);
 
 
 //detect the click
-button.addEventListener('click', create3Boxes)
+button.addEventListener('click', createBoxes)
 
 
-function create3Boxes() {
+function createBoxes() {
   //select input
+  var inputNumber = document.getElementById('inputNumber').value;
   //read value of input
+  // var number = inputNumber.value;
+  console.log (inputNumber);
   //fill value into the for loop
-  for (i = 0; i < 3; i++){
+  for (i = 0; i <inputNumber; i++){
     createBox()
   }
 }
