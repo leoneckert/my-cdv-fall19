@@ -193,9 +193,13 @@ for (let i=0; i<transformData.length; i++){
 //create a div
 
 let bar = document.createElement("div");
+let barName = document.createElement("p");
+barName.innerHTML = food;
 //modify size and/or styling of div
 
 bar.className = "bar";
+bar.style.width=(average*40) + "px";
 //append to the page
 document.body.appendChild(bar);
+bar.appendChild(barName);
 }
