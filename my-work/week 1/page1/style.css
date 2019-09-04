@@ -1,0 +1,10 @@
+/* body{
+  background-color:lightpink;
+} */
+
+.bar{
+  height: 50px;
+  width: 100px;
+  background-color: lightblue;
+  margin-bottom: 5px;
+}
