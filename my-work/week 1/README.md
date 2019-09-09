@@ -5,7 +5,7 @@ My First Coding Assignment
 Hi! My name is Aleksandra and in this repository I will develop my work for this class https://github.com/aleksandramedina/my-cdv-fall19 that I am taking in the Fall Semester 2019.
 
 
-##Reading Assignment
+##Reading Assignment##
 
 **Introduction and Chapter 2**
 **Q:** Why does Bowker say "'Raw data is both and oxymoron and a bad idea'" ? (pp. 663)
