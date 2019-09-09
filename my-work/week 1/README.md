@@ -31,7 +31,7 @@ Q: In which way is Twitter data limited?
 - Twitter does not release all of its data - some of it is sold, some of it is available to prestigious universities, but the majority is available to the social media company itself and its own researchers.
 
 
-*Section 5 (pp. 671)*
+Section 5 (pp. 671)
 Q: If you don't need to login to obtain certain data, then it is public and free to use. Or isn't it? Please share your opinion.
 
 
