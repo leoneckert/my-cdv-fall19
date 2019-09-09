@@ -31,6 +31,8 @@ Q: In which way is Twitter data limited?
 - Twitter does not release all of its data - some of it is sold, some of it is available to prestigious universities, but the majority is available to the social media company itself and its own researchers.
 
 
-Section 5 (pp. 671)
+*Section 5 (pp. 671)*
 Q: If you don't need to login to obtain certain data, then it is public and free to use. Or isn't it? Please share your opinion.
+
+
 This is an incredibly difficult question. There are many people who do not quite realize the implications of their online activities, for example, young children. On one hand it would be unreasonable to ask every researcher to contact each person whose data will be used in a research study, but at the same time singling someone out and/or sharing their online information could destroy their social life or even threaten their safety. There is a lot of personal information that we upload to our social media platforms and I am sure that it would not be too difficult to identify someone by publishing something they have posted online. But on the other hand, if their data is simply used as ‘one among many’, for example, people who used the word “sunshine” in their tweets in the last three days, that, in my opinion, should be ethically fine. Generally speaking, I don’t think there is one golden rule to abide by, other than common sense. However, it could happen that someone might not even imagine the consequences of their research and the implications of using someone’s data for research.
