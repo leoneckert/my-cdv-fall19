@@ -1,0 +1,9 @@
+body{
+ background-color:beige;
+}
+
+.bar{
+ height: 50px;
+ background-color: lightblue;
+ margin-bottom: 5px;
+}
