@@ -31,8 +31,23 @@ let viz = d3.select("#viz-container")
 
 let myData = [3, 6, 8, 1, 5];
 
+function myValues(datapoint){
+  console.log(datapoint);
+  return datapoint*50;
+}
+
+
+// d3.json("data.json").then(gotData);
+
+
+// function gotData(newData){
+//   console.log(newData);
+//   return gotData*50;
+// }
+//
+//
 viz.selectAll("circle").data(myData).enter().append("circle")
-                                    .attr("cx", 120)
+                                    .attr("cx", myValues)
                                     .attr("cy", 400)
-                                    .attr("r", 20)
+                                    .attr("r", 10)
 ;

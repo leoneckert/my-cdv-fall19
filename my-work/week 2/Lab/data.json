@@ -1,4 +1,4 @@
-[
+let newData = [
     {
         "timestamp": "2019-09-09T14:52:29.066Z",
         "The Chinese Food": 5,
