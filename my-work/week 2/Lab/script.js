@@ -1,5 +1,4 @@
-//
-//
+
 let viz = d3.select("#viz-container")
                 .append("svg")
                     .attr("id", "viz")
@@ -9,45 +8,68 @@ let viz = d3.select("#viz-container")
                     .attr("height", 800)
 
 ;
-//
-// viz.attr("height", 500);
-//
-// let myCircle = viz.append("circle")
-//               .attr("cx", 200)
-//               .attr("cy", 100)
-//               .attr("r", 50)
-// ;
-//
-// myCircle.attr("fill", "white");
-//
-// let myRect = viz.append("rect")
-//         .attr("x", 100)
-//         .attr("y", 300)
-//         .attr("height", 25)
-//         .attr("width", 25)
-// ;
-//
-// myRect.attr("fill", "pink");
 
-let myData = [3, 6, 8, 1, 5];
 
-function myValues(datapoint){
-  console.log(datapoint);
-  return datapoint*50;
+var y=0;
+var numColumns = 10;
+
+function color(datapoint){
+  if (datapoint.complimentType=="Personality"){
+    return "blue";
+  }
+
+  else if (datapoint.complimentType=="Appearance"){
+    return "green";
+  }
+
+  else if (datapoint.complimentType=="Work"){
+    return "yellow";
+  }
+
+  else if (datapoint.complimentType=="Birthday related"){
+    return "pink";
+  }
+
+}
+
+function increasingX(datapoint, i){
+return 60*(i%numColumns)+30;
 }
 
 
-// d3.json("data.json").then(gotData);
+
+function increasingY(datapoint, i){
+    if (i%numColumns==0){
+      y++;
+    }
+    return 60*y;
+}
 
 
-// function gotData(newData){
-//   console.log(newData);
-//   return gotData*50;
-// }
-//
-//
-viz.selectAll("circle").data(myData).enter().append("circle")
-                                    .attr("cx", myValues)
-                                    .attr("cy", 400)
-                                    .attr("r", 10)
-;
+
+function gotData(newData){   // this function expects to be passed data
+
+
+
+
+  console.log(newData);   // print it to the console to verify
+
+
+
+  viz.selectAll("circle").data(newData).enter().append("circle")
+                                      .attr("cx", increasingX)
+                                      .attr("cy", increasingY)
+                                      .attr("r", 30)
+                                      .attr("fill", color)
+  ;
+
+
+
+
+
+
+
+
+}
+
+d3.json("data.json").then(gotData);
