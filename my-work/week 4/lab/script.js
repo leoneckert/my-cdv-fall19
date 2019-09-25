@@ -7,6 +7,8 @@ let viz = d3.select("#viz-container")
                     .attr("height", 2000)
 
 ;
+
+
 ///////////////////////////////////////////////////////////////////////////
 //BLUR compliments given online
 
