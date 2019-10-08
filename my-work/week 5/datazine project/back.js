@@ -12,7 +12,8 @@ let viz = d3.select("#viz-container3")
 //BLUR compliments given online
 
 function blurOnline(datapoint){
-  if (datapoint.medium == "WhatsApp" || datapoint.medium == "Facebook " || datapoint.medium == "WeChat" || datapoint.medium == "email" || datapoint.medium == "Instagram" || datapoint.medium == "iMessage"){
+  console.log(datapoint);
+  if (datapoint.type == "online" ){
       return "url(#blurMe)";
   }
 }
@@ -44,12 +45,12 @@ function filterLife(anyData){
 let lifeArray = newData.filter(filterLife)
 console.log(lifeArray);
 
-
-viz.append('g').attr("class", "life").append("circle")
-        .attr("cx", 200)
-        .attr("cy", h/2)
-        .attr("r", lifeArray.length*5)
-        ;
+//
+// viz.append('g').attr("class", "life").append("circle")
+//         .attr("cx", 200)
+//         .attr("cy", h/2)
+//         .attr("r", lifeArray.length*5)
+//         ;
 
 
 function filterOnline(anyData){
@@ -59,12 +60,23 @@ function filterOnline(anyData){
 let onlineArray = newData.filter(filterOnline)
 console.log(onlineArray);
 
+let simpledata = [
+  {type:"life", value: lifeArray.length},
+  {type:"online", value: onlineArray.length}
 
-viz.append('g').attr("class", "online").append("circle")
-        .attr("cx", 900)
+]
+
+viz.selectAll("circle").data(simpledata).enter().append("circle")
+        .attr("cx", function(d, i){
+          return w/3+(i*(w/3));
+        })
         .attr("cy", h/2)
-        .attr("r", onlineArray.length*5)
+        .attr("r", function(d, i){
+          console.log(d.value);
+          return d.value * 5 ;
+        })
         .attr("filter", blurOnline)
+        .attr("fill", "#ab906d")
         ;
 
 }
