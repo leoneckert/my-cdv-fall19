@@ -3,51 +3,18 @@ body{
   background-color: white;
 }
 
-
-.Tuesday{
-  padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 100px;
+#header{
+position: absolute;
 }
 
-.Wednesday{
+#received{
   padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 200px;
+position:absolute;
+width: 1200px;
 }
 
-.Thursday{
-  padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 300px;
-}
-
-.Friday{
-  padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 400px;
-}
-
-.Saturday{
-  padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 500px;
-}
-
-.Sunday{
-  padding-left: 15px;
-  color: black;
-  font: 20px 'HanziPen SC';
-  position:absolute;
-  top: 600px;
+#gave{
+position:absolute;
+width: 2370px;
+text-align: right;
 }
