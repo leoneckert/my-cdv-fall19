@@ -21,19 +21,19 @@ function blurOnline(datapoint){
 
 function color(datapoint){
   if (datapoint.complimentType=="Personality"){
-    return "blue";
+    return "#ea8484";
   }
 
   else if (datapoint.complimentType=="Appearance"){
-    return "green";
+    return "	#f6ba5e";
   }
 
   else if (datapoint.complimentType=="Work"){
-    return "yellow";
+    return "#ddbaba";
   }
 
   else if (datapoint.complimentType=="Birthday related"){
-    return "pink";
+    return "#ab906d";
   }
 
 }
@@ -166,6 +166,7 @@ let birthdayGroup = viz.selectAll(".datagroup").data(birthdayArray)
     birthdayGroup.append("text")
       .attr("x", 30)
       .attr("y",15)
+      .attr("fill", "#ab906d")
       .text(pickItem)
       ;
     birthdayGroup.append("rect")
@@ -179,6 +180,7 @@ let birthdayGroup = viz.selectAll(".datagroup").data(birthdayArray)
     birthdayGroup.append("text")
         .attr("x",40)
         .attr("y", 58)
+        .attr("fill", "#ab906d")
         .text(birthdayArray.length)
     birthdayGroup.attr("transform", "translate (20, 10)");
 
@@ -197,6 +199,7 @@ let personalityGroup = viz.selectAll(".datagroup").data(personalityArray)
           personalityGroup.append("text")
             .attr("x", 30)
             .attr("y",15)
+            .attr("fill", "#ab906d")
             .text(pickItem)
             ;
           personalityGroup.append("rect")
@@ -210,6 +213,7 @@ let personalityGroup = viz.selectAll(".datagroup").data(personalityArray)
          personalityGroup.append("text")
               .attr("x",40)
               .attr("y", 58)
+              .attr("fill", "#ab906d")
               .text(personalityArray.length)
           personalityGroup.attr("transform", "translate (220, 10)");
 
@@ -228,6 +232,7 @@ let workGroup = viz.selectAll(".datagroup").data(workArray)
                     workGroup.append("text")
                       .attr("x", 30)
                       .attr("y",15)
+                      .attr("fill", "#ab906d")
                       .text(pickItem)
                       ;
                     workGroup.append("rect")
@@ -241,6 +246,7 @@ let workGroup = viz.selectAll(".datagroup").data(workArray)
                     workGroup.append("text")
                         .attr("x",40)
                         .attr("y", 58)
+                        .attr("fill", "#ab906d")
                         .text(workArray.length)
                     workGroup.attr("transform", "translate (20, 150)");
 
@@ -267,11 +273,13 @@ let appearanceGroup = viz.selectAll(".datagroup").data(appearanceArray)
                                         appearanceGroup.append("text")
                                           .attr("x",40)
                                           .attr("y", 58)
+                                          .attr("fill", "#ab906d")
                                           .text(appearanceArray.length)
                                           ;
                                         appearanceGroup.append("text")
                                           .attr("x", 30)
                                           .attr("y",15)
+                                          .attr("fill", "#ab906d")
                                           .text(pickItem)
                                           ;
                                         appearanceGroup.attr("transform", "translate (220, 150)");
@@ -287,11 +295,12 @@ let whatsappGroup = viz.selectAll(".datagroup").data(whatsappArray)
       .attr("cx", 10)
       .attr("cy", 10)
       .attr("r", 15)
-      .attr("fill", 'steelblue')
+      .attr("fill", "#ab906d")
       .attr("filter", blurOnline)
     whatsappGroup.append("text")
       .attr("x", 40)
       .attr("y", 15)
+      .attr("fill", "#ab906d")
       .text(pickItem2);
 
     whatsappGroup.attr("transform", "translate(400,10)");
@@ -306,11 +315,12 @@ let wechatGroup = viz.selectAll(".datagroup").data(wechatArray)
           .attr("cx", 10)
           .attr("cy", 10)
           .attr("r", 15)
-          .attr("fill", 'steelblue')
+          .attr("fill", "#ab906d")
           .attr("filter", blurOnline)
         wechatGroup.append("text")
           .attr("x", 40)
           .attr("y", 15)
+          .attr("fill", "#ab906d")
           .text(pickItem2);
 
         wechatGroup.attr("transform", "translate(400,60)");
@@ -325,11 +335,12 @@ let instagramGroup = viz.selectAll(".datagroup").data(instagramArray)
                   .attr("cx", 10)
                   .attr("cy", 10)
                   .attr("r", 15)
-                  .attr("fill", 'steelblue')
+                  .attr("fill", "#ab906d")
                   .attr("filter", blurOnline)
                 instagramGroup.append("text")
                   .attr("x", 40)
                   .attr("y", 15)
+                  .attr("fill", "#ab906d")
                   .text(pickItem2);
 
                 instagramGroup.attr("transform", "translate(400,110)");
@@ -344,11 +355,12 @@ let instagramGroup = viz.selectAll(".datagroup").data(instagramArray)
                           .attr("cx", 10)
                           .attr("cy", 10)
                           .attr("r", 15)
-                          .attr("fill", 'steelblue')
+                          .attr("fill", "#ab906d")
                           .attr("filter", blurOnline)
                         facebookGroup.append("text")
                           .attr("x", 40)
                           .attr("y", 15)
+                          .attr("fill", "#ab906d")
                           .text(pickItem2);
 
                         facebookGroup.attr("transform", "translate(400,160)");
@@ -362,11 +374,12 @@ let lifeGroup = viz.selectAll(".datagroup").data(lifeArray)
                                   .attr("cx", 10)
                                   .attr("cy", 10)
                                   .attr("r", 15)
-                                  .attr("fill", 'steelblue')
+                                  .attr("fill", "#ab906d")
                                   .attr("filter", blurOnline)
                                 lifeGroup.append("text")
                                   .attr("x", 40)
                                   .attr("y", 15)
+                                  .attr("fill", "#ab906d")
                                   .text(pickItem2);
 
                                 lifeGroup.attr("transform", "translate(400,210)");
@@ -409,6 +422,7 @@ function gotData2(newData2){
       birthdayGroup2.append("text")
         .attr("x", 30)
         .attr("y",15)
+        .attr("fill", "#ab906d")
         .text(pickItemData2)
         ;
       birthdayGroup2.append("rect")
@@ -422,6 +436,7 @@ function gotData2(newData2){
       birthdayGroup2.append("text")
           .attr("x",40)
           .attr("y", 58)
+          .attr("fill", "#ab906d")
           .text(birthdayArray2.length)
       birthdayGroup2.attr("transform", "translate (800, 10)");
 
@@ -440,6 +455,7 @@ function gotData2(newData2){
             personalityGroup2.append("text")
               .attr("x", 30)
               .attr("y",15)
+              .attr("fill", "#ab906d")
               .text(pickItemData2)
               ;
             personalityGroup2.append("rect")
@@ -453,6 +469,7 @@ function gotData2(newData2){
            personalityGroup2.append("text")
                 .attr("x",40)
                 .attr("y", 58)
+                .attr("fill", "#ab906d")
                 .text(personalityArray2.length)
             personalityGroup2.attr("transform", "translate (600, 150)");
 
@@ -471,6 +488,7 @@ function gotData2(newData2){
                       workGroup2.append("text")
                         .attr("x", 30)
                         .attr("y",15)
+                        .attr("fill", "#ab906d")
                         .text(pickItemData2)
                         ;
                       workGroup2.append("rect")
@@ -484,6 +502,7 @@ function gotData2(newData2){
                       workGroup2.append("text")
                           .attr("x",40)
                           .attr("y", 58)
+                          .attr("fill", "#ab906d")
                           .text(workArray2.length)
                       workGroup2.attr("transform", "translate (600, 10)");
 
@@ -510,11 +529,13 @@ function gotData2(newData2){
                                           appearanceGroup2.append("text")
                                             .attr("x",40)
                                             .attr("y", 58)
+                                            .attr("fill", "#ab906d")
                                             .text(appearanceArray2.length)
                                             ;
                                           appearanceGroup2.append("text")
                                             .attr("x", 30)
                                             .attr("y",15)
+                                            .attr("fill", "#ab906d")
                                             .text(pickItemData2)
                                             ;
                                           appearanceGroup2.attr("transform", "translate (800, 150)");

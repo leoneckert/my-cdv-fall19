@@ -1,18 +1,26 @@
 body{
-  font: 12px 'Helvetica';
+  font: 16px 'Futura';
   background-color: white;
+  color: #ab906d;
+}
+
+#viz-container3{
+  background-color: 	#f2ebe2;
+  color: #ab906d;
 }
 #header{
 position: absolute;
 }
 
 #compLife{
-  padding-left: 15px;
+padding-top: 30px;
+padding-left: 15px;
 position:absolute;
 width: 1200px;
 }
 
 #compOnline{
+padding-top: 30px;
 position:absolute;
 width: 1170px;
 text-align: right;

@@ -167,19 +167,19 @@ function circleLocation  (d,i, set){
 
 function color(datapoint){
   if (datapoint.complimentType=="Personality"){
-    return "blue";
+    return "#ea8484";
   }
 
   else if (datapoint.complimentType=="Appearance"){
-    return "green";
+    return "#f6ba5e";
   }
 
   else if (datapoint.complimentType=="Work"){
-    return "yellow";
+    return "#ddbaba";
   }
 
   else if (datapoint.complimentType=="Birthday related"){
-    return "pink";
+    return "#ab906d";
   }
 
 }
@@ -414,19 +414,19 @@ function circleLocation2  (d,i, set){
 
 function color2(datapoint2){
   if (datapoint2.complimentType=="Personality"){
-    return "blue";
+    return "#ea8484";
   }
 
   else if (datapoint2.complimentType=="Appearance"){
-    return "green";
+    return "#f6ba5e";
   }
 
   else if (datapoint2.complimentType=="Work"){
-    return "yellow";
+    return "#ddbaba";
   }
 
   else if (datapoint2.complimentType=="Birthday related"){
-    return "pink";
+    return "#ab906d";
   }
 
 }

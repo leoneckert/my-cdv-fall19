@@ -1,6 +1,7 @@
 body{
-  font: 12px 'Helvetica';
-  background-color: white;
+font: 16px 'Futura';
+background-color: white;
+color: #ab906d;
 }
 
 #header{
@@ -8,13 +9,20 @@ position: absolute;
 }
 
 #received{
-  padding-left: 15px;
+padding-top: 30px;
+padding-left: 15px;
 position:absolute;
 width: 1200px;
 }
 
 #gave{
+padding-top: 30px;
 position:absolute;
 width: 2370px;
 text-align: right;
+}
+
+#viz-container{
+background-color: #f2ebe2;
+color: #ab906d;
 }

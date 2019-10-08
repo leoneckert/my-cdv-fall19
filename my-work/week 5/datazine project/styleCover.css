@@ -1,6 +1,10 @@
 body{
-  font: 16px 'Helvetica';
-  background-color: white;
-  padding-left: 15px;
-  padding-right:15px;
+  font: 16px 'Futura';
+}
+
+#viz-container2{
+  background-color:#f2ebe2;
+  color: #ab906d;
+  padding-left: 30px;
+  padding-right: 60px;
 }
