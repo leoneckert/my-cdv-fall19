@@ -8,3 +8,12 @@ body{
   padding-left: 100px;
   padding-right: 200px;
 }
+
+#signature{
+  color: #ab906d;
+  font: 20px 'Overpriced Ghetto';
+  position:absolute;
+  padding-top: 240px;
+  width: 1000px;
+  text-align: right;
+}
