@@ -221,9 +221,10 @@ function gotData(newData){
                           .attr("filter", blurOnline)
 
                             tuesdayGroup.append("text")
-                                .attr("x", 20)
-                                .attr("y", 5)
+                                .attr("x", 0)
+                                .attr("y", 15)
                                 .text(pickItem)
+                                       .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
 
                                   tuesdayGroup.attr("transform", circleLocation);
 
@@ -249,9 +250,10 @@ let wednesdayGroup = wednesdayWrapper.selectAll(".datagroup").data(wednesdayArra
                       .attr("filter", blurOnline)
 
                         wednesdayGroup.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
 
                               wednesdayGroup.attr("transform", circleLocation);
 
@@ -276,9 +278,10 @@ let thursdayGroup = thursdayWrapper.selectAll(".datagroup").data(thursdayArray)
                       .attr("filter", blurOnline)
 
                         thursdayGroup.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             thursdayGroup.attr("transform", circleLocation);
 
 ///////////////////////////////////////////////////////////////////////
@@ -302,9 +305,10 @@ let fridayGroup = fridayWrapper.selectAll(".datagroup").data(fridayArray)
                       .attr("filter", blurOnline)
 
                         fridayGroup.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             fridayGroup.attr("transform", circleLocation);
 
 ///////////////////////////////////////////////////////////////////////
@@ -328,9 +332,10 @@ let saturdayGroup = saturdayWrapper.selectAll(".datagroup").data(saturdayArray)
                       .attr("filter", blurOnline)
 
                         saturdayGroup.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             saturdayGroup.attr("transform", circleLocation);
 
 ///////////////////////////////////////////////////////////////////////
@@ -354,9 +359,10 @@ let sundayGroup = sundayWrapper.selectAll(".datagroup").data(sundayArray)
                       .attr("filter", blurOnline)
 
                         sundayGroup.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             sundayGroup.attr("transform", circleLocation);
 
 
@@ -468,9 +474,10 @@ function gotData2(newData2){
                           .attr("filter", blurOnline2)
 
                             tuesdayGroup2.append("text")
-                                .attr("x", 20)
-                                .attr("y", 5)
+                                .attr("x", 0)
+                                .attr("y", 15)
                                 .text(pickItem2)
+                                       .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
 
                                   tuesdayGroup2.attr("transform", circleLocation2);
 
@@ -496,9 +503,10 @@ let wednesdayGroup2 = wednesdayWrapper2.selectAll(".datagroup").data(wednesdayAr
                       .attr("filter", blurOnline2)
 
                         wednesdayGroup2.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem2)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
 
                               wednesdayGroup2.attr("transform", circleLocation2);
 
@@ -523,9 +531,10 @@ let thursdayGroup2 = thursdayWrapper2.selectAll(".datagroup").data(thursdayArray
                       .attr("filter", blurOnline2)
 
                         thursdayGroup2.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem2)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             thursdayGroup2.attr("transform", circleLocation2);
 
 ///////////////////////////////////////////////////////////////////////
@@ -549,9 +558,10 @@ let fridayGroup2 = fridayWrapper2.selectAll(".datagroup").data(fridayArray2)
                       .attr("filter", blurOnline2)
 
                         fridayGroup2.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem2)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             fridayGroup2.attr("transform", circleLocation2);
 
 ///////////////////////////////////////////////////////////////////////
@@ -575,9 +585,10 @@ let saturdayGroup2 = saturdayWrapper2.selectAll(".datagroup").data(saturdayArray
                       .attr("filter", blurOnline2)
 
                         saturdayGroup2.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem2)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             saturdayGroup2.attr("transform", circleLocation2);
 
 ///////////////////////////////////////////////////////////////////////
@@ -601,9 +612,10 @@ let sundayGroup2 = sundayWrapper2.selectAll(".datagroup").data(sundayArray2)
                       .attr("filter", blurOnline2)
 
                         sundayGroup2.append("text")
-                            .attr("x", 20)
-                            .attr("y", 5)
+                            .attr("x", 0)
+                            .attr("y", 15)
                             .text(pickItem2)
+                                   .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
                             sundayGroup2.attr("transform", circleLocation2);
 
 
