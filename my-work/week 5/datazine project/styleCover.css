@@ -1,5 +1,5 @@
 body{
-  font: 16px 'Futura';
+  font: 10px 'Futura';
 }
 
 #viz-container2{
@@ -7,6 +7,7 @@ body{
   color: #ab906d;
   padding-left: 100px;
   padding-right: 200px;
+  font-size: 12px;
 }
 
 #signature{
@@ -17,3 +18,8 @@ body{
   width: 1000px;
   text-align: right;
 }
+
+/* #description{
+  font-size: 12px;
+  font-style:'Futura';
+} */

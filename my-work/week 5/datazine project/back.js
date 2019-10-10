@@ -68,7 +68,7 @@ let simpledata = [
 
 viz.selectAll("circle").data(simpledata).enter().append("circle")
         .attr("cx", function(d, i){
-          return w/3+(i*(w/3));
+          return w/8+(5*i*(w/8));
         })
         .attr("cy", h/2)
         .attr("r", function(d, i){
