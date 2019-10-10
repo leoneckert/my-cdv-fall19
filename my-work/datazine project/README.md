@@ -1,6 +1,6 @@
 <h1>Aleksandra's Compliment Project</h1>
 
-<h5>I chose to collect the compliments I give and receive because I wanted to do a project that's personal and would let me look at my own life from a different perspective and maybe learn something new about myself (which I did, and it turns out I am not a very compliment-giving person, which I <i>definitely</i> intend to change🤞🏼).</h5>
+<h3>I chose to collect the compliments I give and receive because I wanted to do a project that's personal and would let me look at my own life from a different perspective and maybe learn something new about myself (which I did, and it turns out I am not a very compliment-giving person, which I <i>definitely</i> intend to change🤞🏼).</h3>
 <br>
 <br>
 <p>I really, really enjoyed doing this project, and I have learned so much! The hardest part for me was the very beginning, because I struggled with the syntax and was a little rusty with my coding. However, now I feel much more confident! (Big thanks for the help during office hours; I really appreciate them🐣)</p>
