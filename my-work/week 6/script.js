@@ -72,21 +72,69 @@ let vizgroup = viz.append("g").attr("class", "vizgroup");
 
 //data to visualize
 let step = 140;
+drawViz();
+
+// setTimeout(function(){
+//   step=200;
+//   drawViz();
+// }, 4000);
+
+setInterval(function(){
+  step+= 5;
+  drawViz();
+}, 200);
+
+function drawViz(){
+console.log("drawViz runs");
+
 let data = getStep(incomingData, step);
 console.log(data);
+//d3.shuffle(data);
+//console.log(data);
 
-let datagroups = vizgroup.selectAll(".datagroup").data(data).enter()
+let datagroups = vizgroup.selectAll(".datagroup").data(data, function(d){
+  return d.name;
+});
+
+let enteringDataGroup = datagroups.enter()
   .append("g")
   .attr("class", "datagroup")
 ;
-datagroups.append("circle")
+enteringDataGroup.append("circle")
     .attr("r", 5)
     .attr("fill", "white")
 ;
+enteringDataGroup.append("text")
+    .text(function(d,i){
+      console.log(d);
+      return d.name;
+    })
+    .attr("x", 10)
+    .attr("y", 5)
+    .attr("fill", "white")
+    .attr("font-family", "Helvetica")
+
+    ;
+
+enteringDataGroup.attr("transform", function(d, i){
+  return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
+});
+
 datagroups.attr("transform", function(d, i){
   return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
 });
 
+
+datagroups.transition().attr("transform", function(d, i){
+  return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
+});
+}
+
+
+//trying to make the x axis move, but it's not working :)))
+function movingXscale(){
+  return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
+}
 
 
 
